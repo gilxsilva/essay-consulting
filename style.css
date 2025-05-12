@@ -1,0 +1,777 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #F5EFE7; /* Light Beige */
+    color: #213555; /* Deep Blue */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* --------------------------- Header Styles --------------------------- */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #213555; /* Deep Blue */
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+    font-family: 'Poppins', serif;
+    font-size: 24px;
+    color: #F5EFE7; /* Light Beige */
+}
+
+header nav a {
+    color: #F5EFE7; /* Light Beige */
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 600;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* --------------------------- Profile Section --------------------------- */
+main.profile {
+    display: flex; /* Aligns items horizontally */
+    align-items: center; /* Centers items vertically */
+    justify-content: center; /* Centers items horizontally */
+    height: calc(100vh - 60px); /* Subtracts header height to prevent overflow */
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF; /* Warm Beige */
+    text-align: center; /* Ensures the text aligns neatly in the center */
+}
+
+.profile-image {
+    display: flex; /* Flexbox to ensure alignment inside the image container */
+    justify-content: center; /* Centers image horizontally */
+    align-items: center; /* Centers image vertically */
+    margin-right: 40px; /* Adds spacing between the image and the text */
+    margin-top: -250px; /* Moves the image upward */
+}
+
+.profile-image img {
+    border: 10px solid #3E5879; /* Muted Blue Border */
+    border-radius: 50%; /* Makes the image circular */
+    width: 250px; /* Sets width */
+    height: 250px; /* Sets height */
+    object-fit: cover; /* Ensures the image fits properly */
+}
+
+.profile-info {
+    text-align: left; /* Aligns text on the left side */
+    max-width: 400px; /* Restricts the width of the text block */
+    margin-top: -250px; /* Moves the text upward */
+}
+
+.gil-silva-title {
+    font-weight: 700;
+    font-family: 'Poppins', serif;
+    font-size: 72px;
+    color: #213555; /* Deep Blue */
+    margin: 0;
+}
+
+.position-description {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600; /* Semi-bold for emphasis */
+    font-size: 24px; /* Slightly smaller than the title */
+    color: #3E5879; /* Muted Blue */
+    margin: 10px 0; /* Adds spacing below the description */
+}
+
+.personal-information p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400; /* Regular weight */
+    font-size: 16px; /* Standard size for details */
+    color: #213555; /* Deep Blue */
+    margin: 5px 0; /* Adds space between lines */
+    line-height: 1.5; /* Adds consistent spacing between lines */
+}
+
+/* --------------------------- Bio Section --------------------------- */
+.bio-section {
+    padding: 20px 20px; /* Reduced padding to shrink the section */
+    text-align: center;
+    background-color: #F5EFE7; /* Light beige background for contrast */
+    color: #333333; /* Dark gray text color */
+    margin-top: -200px; /* Negative margin to pull the section closer */
+}
+
+.bio-section h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    color: #21355A; /* Dark navy for headings */
+    margin-bottom: 15px;
+}
+
+.bio-section p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #3E5879; /* Muted blue-gray for text */
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.learn-more-button {
+    display: inline-block;
+    margin-top: 15px; /* Slightly reduced spacing */
+    padding: 10px 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #FFFFFF;
+    background-color: #21355A; /* Dark navy button */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.learn-more-button:hover {
+    background-color: #3E5879; /* Muted blue-gray on hover */
+}
+
+/* --------------------------- Services Styles --------------------------- */
+.services-page {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #F5EFE7; /* Beige background */
+}
+
+.services-header h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    color: #21355A; /* Navy */
+    margin-bottom: 10px;
+}
+
+.services-header p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #3E5879; /* Muted Blue */
+    margin-bottom: 30px;
+}
+
+/* Services List Styles */
+.services-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns on larger screens */
+    gap: 20px;
+    justify-content: center;
+}
+
+.service {
+    background-color: #FFFFFF; /* White */
+    border: 1px solid #D8C4B6; /* Light border */
+    border-radius: 10px;
+    padding: 20px;
+    text-align: left;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.service h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: #21355A; /* Navy */
+    margin-bottom: 10px;
+}
+
+.service p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    font-size: 16px;
+    color: #3E5879; /* Muted Blue */
+    line-height: 1.6;
+    margin-bottom: 20px; /* Add spacing below text */
+}
+
+/* Highlight on Hover */
+.service:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.15);
+    background-color: #F9F4ED; /* Light beige highlight */
+}
+
+/* Button inside service cards */
+.service .learn-more-button {
+    display: inline-block;
+    margin-top: auto; /* Push the button to the bottom */
+    padding: 10px 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #FFFFFF;
+    background-color: #21355A; /* Navy blue */
+    border: none;
+    border-radius: 8px; /* Rounded corners */
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.service .learn-more-button:hover {
+    background-color: #3E5879; /* Muted Blue */
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+}
+
+/* Styling for QuestBridge Application Package */
+.questbridge-package {
+    background-color: #FFF4CC; /* Soft golden beige */
+    border: 2px solid #21355A; /* Deep Blue border */
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px; /* Add spacing below */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Softer shadow */
+}
+
+.questbridge-package h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: #21355A; /* Deep Blue */
+    margin-bottom: 10px;
+}
+
+.questbridge-package p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #333333; /* Dark Gray */
+    line-height: 1.6;
+}
+
+.questbridge-package p a {
+    color: #21355A; /* Deep Blue for link */
+    text-decoration: underline;
+}
+
+.questbridge-package .free-price {
+    font-size: 18px;
+    font-weight: 600;
+    color: #21355A; /* Deep Blue */
+    margin-top: 10px;
+}
+
+/* Make the QuestBridge package stand out on hover */
+.questbridge-package:hover {
+    transform: translateY(-5px); /* Lift effect */
+    background-color: #FFF9E6; /* Even lighter soft golden beige on hover */
+    transition: all 0.3s ease;
+}
+
+/* Button styling */
+.learn-more-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #FFFFFF;
+    background-color: #21355A; /* Navy blue */
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.learn-more-button:hover {
+    background-color: #3E5879; /* Muted Blue */
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+}
+
+
+/* Call-to-action button */
+.call-to-action {
+    margin-top: 40px;
+}
+
+.learn-more-button {
+    display: inline-block;
+    padding: 15px 30px; /* Increased padding for a larger button */
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px; /* Bigger font size */
+    font-weight: 700; /* Bold font for emphasis */
+    color: #FFFFFF; /* White text */
+    background-color: #21355A; /* Dark navy for strong contrast */
+    border: none;
+    border-radius: 8px; /* Slightly rounded corners */
+    cursor: pointer;
+    text-decoration: none;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15); /* Subtle shadow for depth */
+}
+
+.learn-more-button:hover {
+    background-color: #3E5879; /* Muted blue-gray on hover */
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+
+/* Testimonials Section */
+.testimonials {
+    background-color: #F5EFE7; /* Beige background */
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    color: #21355A; /* Navy */
+    margin-bottom: 10px;
+}
+
+.testimonials p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #3E5879; /* Muted Blue */
+    margin-bottom: 30px;
+}
+
+.testimonials-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.testimonial {
+    background-color: #FFFFFF; /* White */
+    border: 1px solid #D8C4B6; /* Light border */
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 300px;
+    flex: 1;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #333333; /* Dark Gray */
+    line-height: 1.6;
+}
+
+.testimonial strong {
+    color: #21355A; /* Navy */
+    font-weight: 600;
+}
+
+/* --------------------------- Blog Styles --------------------------- */
+.blog-page {
+    padding: 50px 20px;
+    background-color: #F5EFE7; /* Light beige background */
+}
+
+.blog-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.blog-header h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    color: #21355A; /* Navy */
+}
+
+.blog-header p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #3E5879; /* Muted Blue */
+    margin: 10px 0;
+}
+
+.blog-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Ensures 3 columns */
+    gap: 20px; /* Adds spacing between articles */
+    justify-content: center;
+}
+
+@media (max-width: 1024px) {
+    .blog-list {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .blog-list {
+        grid-template-columns: 1fr; /* 1 column for small screens */
+    }
+}
+
+.blog-post {
+    background-color: #FFFFFF; /* White */
+    border: 1px solid #D8C4B6; /* Light border */
+    border-radius: 10px;
+    padding: 20px;
+    text-align: left;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-post:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.blog-post h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: #21355A; /* Navy */
+    margin-bottom: 10px;
+}
+
+.blog-post p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #333333; /* Dark gray */
+    margin-bottom: 15px;
+}
+
+.read-more-button {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #21355A; /* Navy */
+    color: #FFFFFF; /* White */
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.read-more-button:hover {
+    background-color: #3E5879; /* Muted Blue */
+}
+
+/* Coming Soon Page Styles */
+.coming-soon-page {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #F5EFE7; /* Light Beige */
+}
+
+.coming-soon-content {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #FFFFFF; /* White */
+    border: 1px solid #D8C4B6; /* Soft Beige Border */
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.coming-soon-content h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    color: #21355A; /* Navy */
+    margin-bottom: 15px;
+}
+
+.coming-soon-content p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: #3E5879; /* Muted Blue */
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+/* Contact Section */
+.contact-container {
+    display: flex;
+    flex-direction: column; /* Stack the sections vertically */
+    align-items: center; /* Center the content horizontally */
+    gap: 40px; /* Space between the sections */
+    margin: 0 auto; /* Center the entire container */
+    max-width: 600px; /* Restrict container width for better readability */
+}
+
+.contact-form-wrapper, .contact-details {
+    width: 100%; /* Make both sections take the full width of the container */
+    text-align: center; /* Center-align the content */
+}
+
+.contact-section {
+    background-color: #F5EFE7; /* Light beige */
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    color: #213555; /* Dark blue */
+    margin-bottom: 10px;
+}
+
+.contact-section p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #3E5879; /* Medium blue */
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    max-width: 500px; /* Slightly narrower for balance */
+    margin: 0 auto; /* Center it horizontally */
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Consistent spacing */
+}
+
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #D8C4B6; /* Soft beige */
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    color: #213555; /* Dark blue */
+}
+
+.contact-form input::placeholder, .contact-form textarea::placeholder {
+    color: #3E5879; /* Medium blue */
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: #213555; /* Dark blue */
+    color: #F5EFE7; /* Light beige */
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #3E5879; /* Medium blue */
+}
+
+/* --------------------------- Footer Styles --------------------------- */
+footer {
+    background-color: #213555; /* Deep Blue */
+    padding: 30px 20px; /* Adds padding around the footer */
+    font-family: 'Poppins', sans-serif;
+    color: #F5EFE7; /* Light Beige */
+}
+
+.footer-container {
+    display: flex; /* Aligns items in a row */
+    justify-content: space-between; /* Spreads columns evenly */
+    flex-wrap: wrap; /* Makes the footer responsive */
+    gap: 20px; /* Adds space between sections */
+}
+
+.footer-section {
+    flex: 1; /* Allocates equal space for each section */
+    min-width: 150px; /* Ensures sections have a minimum width */
+    text-align: center; /* Centers content within each section */
+}
+
+.footer-section h4 {
+    font-weight: 600; /* Semi-bold headings */
+    font-size: 16px;
+    margin-bottom: 10px; /* Adds space below headings */
+    color: #F5EFE7; /* Light Beige */
+}
+
+.footer-section p {
+    font-size: 14px; /* Text size for content */
+    color: #F5EFE7; /* Light Beige */
+    margin: 5px 0; /* Adds spacing between items */
+    text-decoration: none; /* Removes underline for links */
+}
+
+.footer-section a {
+    color: #FFFFFF; /* Warm Beige */
+    text-decoration: none; /* Removes underline */
+}
+
+.footer-section a:hover {
+    text-decoration: underline; /* Adds underline on hover */
+}
+
+.footer-bottom {
+    text-align: center; /* Centers the copyright text */
+    margin-top: 20px; /* Adds space above the bottom section */
+    font-size: 12px; /* Smaller font size for copyright info */
+    color: #F5EFE7; /* Light Beige */
+}
+
+/* --------------------------- Media Queries for Responsiveness --------------------------- */
+@media (max-width: 768px) {
+    body {
+        padding: 0 10px; /* Add padding to ensure content doesn't touch screen edges */
+    }
+
+    /* Header */
+    header {
+        flex-direction: column; /* Stack the logo and navigation vertically */
+        align-items: flex-start; /* Align items to the left */
+        padding: 10px;
+    }
+
+    header .logo {
+        margin-bottom: 10px;
+    }
+
+    header nav {
+        display: flex;
+        flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    }
+
+    header nav a {
+        margin: 5px 10px; /* Add space between navigation links */
+    }
+
+    /* Profile Section */
+    main.profile {
+        flex-direction: column; /* Stack the image and text vertically */
+        height: auto; /* Allow height to adjust dynamically */
+        margin-top: 20px;
+    }
+
+    .profile-image {
+        margin: 0 auto 20px; /* Center the image and add space below */
+    }
+
+    .profile-info {
+        text-align: center; /* Center-align text */
+        margin: 0 auto;
+    }
+
+    .gil-silva-title {
+        font-size: 36px; /* Reduce title size for smaller screens */
+    }
+
+    .position-description {
+        font-size: 18px; /* Adjust description size */
+    }
+
+    .personal-information p {
+        font-size: 14px; /* Make text smaller for mobile */
+    }
+
+    /* Bio Section */
+    .bio-section {
+        margin-top: 20px; /* Adjust spacing */
+        padding: 20px 10px; /* Add padding for smaller screens */
+    }
+
+    .bio-section h2 {
+        font-size: 28px; /* Reduce heading size */
+    }
+
+    .bio-section p {
+        font-size: 16px; /* Adjust paragraph size */
+    }
+
+    /* Footer */
+    .footer-container {
+        flex-direction: column; /* Stack footer sections vertically */
+        align-items: center; /* Center-align content */
+        gap: 10px; /* Reduce gap between sections */
+    }
+
+    .footer-section {
+        min-width: unset; /* Remove minimum width to allow smaller sections */
+        text-align: center; /* Center-align text */
+    }
+}
+
+/* Tablet Styling */
+@media (max-width: 1024px) {
+    .services-list {
+        flex-direction: column; /* Stack services vertically */
+        align-items: center; /* Center-align the content */
+    }
+
+    .service {
+        max-width: 90%; /* Allow services to take up more width */
+    }
+
+    /* Testimonials */
+    .testimonials-list {
+        flex-direction: column; /* Stack testimonials vertically */
+        align-items: center; /* Center-align testimonials */
+    }
+
+    .testimonial {
+        max-width: 90%; /* Allow testimonials to take up more width */
+    }
+}
+
+/* Blog Responsiveness */
+@media (max-width: 768px) {
+    .blog-list {
+        grid-template-columns: 1fr; /* Single column layout */
+        gap: 15px; /* Reduce gap between blog posts */
+    }
+
+    .blog-post {
+        padding: 15px; /* Reduce padding inside blog posts */
+    }
+
+    .blog-post h2 {
+        font-size: 18px; /* Adjust heading size */
+    }
+
+    .blog-post p {
+        font-size: 14px; /* Adjust paragraph size */
+    }
+}
+
+/* Contact Section Responsiveness */
+@media (max-width: 768px) {
+    .contact-container {
+        gap: 20px; /* Reduce gap between form and details */
+    }
+
+    .contact-form-wrapper, .contact-details {
+        max-width: 100%; /* Allow sections to take full width */
+    }
+}
+
+/* FAQ Page Responsiveness */
+@media (max-width: 768px) {
+    .faq-list {
+        padding: 0 10px; /* Add padding for smaller screens */
+    }
+
+    .faq-item {
+        font-size: 14px; /* Adjust text size */
+    }
+}
